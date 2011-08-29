@@ -2,6 +2,8 @@
 #define ACCEPTOR_H_
 
 #include <string>
+#include <cstdlib>
+#include <cstring>
 #include <vector>
 #include <deque>
 #include <fstream>
