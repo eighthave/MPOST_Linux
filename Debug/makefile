@@ -37,7 +37,7 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: libMPOST_Linux.a
+all: libMPOST_Linux.a libMPOST_Linux.so
 
 # Tool invocations
 libMPOST_Linux.a: $(OBJS) $(USER_OBJS)
@@ -47,9 +47,16 @@ libMPOST_Linux.a: $(OBJS) $(USER_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
+libMPOST_Linux.so: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: GCC C++ Linker'
+	$(CXX) -rdynamic -shared -fPIC -o $@ $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(ARCHIVES)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS) libMPOST_Linux.a
+	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(ARCHIVES)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS) libMPOST_Linux.a libMPOST_Linux.so
 	-@echo ' '
 
 .PHONY: all clean dependents
