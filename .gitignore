@@ -1,0 +1,12 @@
+Debug/Acceptor.d
+Debug/Acceptor.o
+Debug/Bill.d
+Debug/Bill.o
+Debug/Coupon.d
+Debug/Coupon.o
+Debug/DataLinkLayer.d
+Debug/DataLinkLayer.o
+Debug/Worker.d
+Debug/Worker.o
+Debug/libMPOST_Linux.a
+MPOST_Log_ttyUSB0.txt
