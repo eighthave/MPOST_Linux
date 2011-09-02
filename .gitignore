@@ -9,4 +9,16 @@ Debug/DataLinkLayer.o
 Debug/Worker.d
 Debug/Worker.o
 Debug/libMPOST_Linux.a
+Release/Acceptor.d
+Release/Acceptor.o
+Release/Bill.d
+Release/Bill.o
+Release/Coupon.d
+Release/Coupon.o
+Release/DataLinkLayer.d
+Release/DataLinkLayer.o
+Release/Worker.d
+Release/Worker.o
+Release/libMPOST_Linux.a
+Release/libMPOST_Linux.so
 MPOST_Log_ttyUSB0.txt
