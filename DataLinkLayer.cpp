@@ -190,8 +190,8 @@ vector<char>* CDataLinkLayer::ReceiveReply()
 
 			if (reply->size() < (unsigned)length - 1)
 				checkByte ^= payloadAndETXBuffer[i];
-			else
-				cout << payloadAndETXBuffer[i] << endl;
+//			else
+//				cout << payloadAndETXBuffer[i] << endl;
 		}
     }
 
